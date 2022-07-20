@@ -1,0 +1,238 @@
+body{
+    margin: 0 10%;
+}
+a i{
+    font-size:25px;
+    color:rgb(70, 70, 70);
+    padding: 10px 10px;
+}
+a{
+    text-decoration:none;
+}
+.logos{
+    margin-top:10px;
+    text-align: right;
+}
+
+.profile_img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile_img img{
+    width:100%;
+    object-fit: contain;
+    height:100%;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;   
+    margin-bottom: 15px;
+}
+.margin{
+    margin: 10px 0;
+}
+.colortxt{
+    margin: 10px 0;
+    font-weight:bold;
+    background:linear-gradient(90deg,#fc5c7d,#6a82fb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.profile{
+    margin-bottom: 110px;
+}
+.about{
+    font-size:25px;
+    margin: 30px 0;
+}
+.btn{
+    background-color: rgb(234, 234, 234);
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    color: #000;
+}
+.skill{
+    background-color: rgb(242, 242, 242);
+    font-size: 20px;
+    padding: 10px 25px;
+    width:auto;
+    margin: 10px 20px 10px 0;
+    border: 1px solid rgb(236, 234, 234);
+}
+.side_headings{
+    font-size:30px;
+    width: auto;
+}
+#Skills{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px 0 55px 0;
+}
+/* ---------------------------------------------proj----------------------------- */
+
+#Projects{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px 0 55px 0;
+}
+.card{
+    margin: 20px 20px;
+    padding: 20px;
+    border: 1px solid rgb(231, 230, 230);
+}
+.card:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card img{
+    width: 250px;
+    height: 200px;
+}
+
+.card .Proj_name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.card div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Tskill{
+    border: 1px solid rgb(231, 230, 230);
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.imglinks{
+    position: relative;
+}
+
+.linksdiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(223, 223, 223, 0.741);
+    width: 100%;
+    height:100%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linksdiv i{
+    font-size:25px;
+    margin: 10px;
+    color:black;
+    padding: 5px;
+}
+.linksdiv i:hover{
+    background-color:black;
+    color:white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#Education{
+    margin: 35px 0 55px 0;
+}
+.education_card{
+    display: flex;
+    border: 1px solid rgb(231, 230, 230);
+    align-items:center;
+    /* justify-content:center; */
+    padding: 12px;
+    margin: 20px;
+}
+.education_card i{
+    font-size: 30px;
+    width: 10%;
+}
+.education_data{
+    width: 70%;
+}
+.education_date{
+    width: 20%;
+}
+.education_type{
+    margin: 0px;
+    font-weight: bold;
+    font-size: 23px;
+}
+.education_name{
+    margin: 0;
+    font-size: 15px;
+}
+@media screen and (max-width:425px) {
+    body{
+        margin: 0 15px;
+    }
+    .education_card{
+        margin: 0;
+    }
+    .education_card i{
+        width:15%;
+        font-size:20px;
+    }
+    .education_data{
+        width: 60%;
+    }
+    .education_date{
+        width:40%;
+        font-size: 13px;
+    }
+    .skill{
+        font-size:14px;
+    }
+}
+@media screen and (max-width:850px) {
+    body{
+        margin: 0 5%;
+    }
+    .card img{
+        width: 230px;
+        height: 180px;
+    }
+    .education_card i{
+        width:10%;
+    }
+    .education_data{
+        width: 60%;
+    }
+    .education_date{
+        width:30%;
+    }
+    .skill{
+        font-size:18px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .card{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .card img{
+        width: 100%;
+        height: 250px;
+    }
+    .education_card i{
+        width:13%;
+    }
+    .education_data{
+        width: 52%;
+    }
+    .education_date{
+        width:35%;
+        font-size:13px;
+    }
+    .skill{
+        font-size:15px;
+    }
+}
