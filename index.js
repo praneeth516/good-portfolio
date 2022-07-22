@@ -12,8 +12,8 @@ const Skills = [
   "Redux",
   "Git"
 ];
-const projects = [{name:"Orbitz Clone" , stack:["html", "Css", "Js"], SourceCode:"https://github.com/praneeth516/unit2_orbitz", deployed:'https://orbitsz.netlify.app/',src: "./references/orbitz ref img.png"},
-                  {name:"The HomeDepot Clone" , stack:["html", "Css", "Js"], SourceCode:"https://github.com/praneeth516/unit3_thehomedepot", deployed:'https://resilient-puppy-1642cb.netlify.app/', src:"./references/homedepot ref img.png"} ]
+const projects = [{name:"Orbitz Clone" ,description:"This is a clone website of The Orbitz booking website which serves purpose of booking of flight tickets,hotels and holidays.", stack:["html", "Css", "Js"], SourceCode:"https://github.com/praneeth516/unit2_orbitz", deployed:'https://orbitsz.netlify.app/',src: "./references/orbitz ref img.png"},
+                  {name:"The HomeDepot Clone" ,description:"This is an clone website of The homedepot e-commerce website which serves the purpose of buying furniture for both commercial and household purposes.", stack:["html", "Css", "Js"], SourceCode:"https://github.com/praneeth516/unit3_thehomedepot", deployed:'https://resilient-puppy-1642cb.netlify.app/', src:"./references/homedepot ref img.png"} ]
 const education = [{ degree: "Btech", college: "Sri Venkateswara Institute Of Technology", from: "Mar 2017", to: "Aug 2021" },
 { degree: "Intermediate", college: "Narayana Jr College", from: "Mar 2015", to: "Jul 2017" },
 { degree: "SSC", college: "Montessori Smart School", from: "Mar 2014", to: "Feb 2015" }];
@@ -68,6 +68,9 @@ projects.map((ele) => {
   const name = document.createElement("p");
   name.className = "Proj_name"
   name.innerHTML= ele.name
+  const description= document.createElement("p");
+  description.className = "desc_name"
+  description.innerHTML= ele.description
   const tech = document.createElement("p")
   tech.innerHTML="Tech Stack"
   tech.className="colortxt"
@@ -79,7 +82,7 @@ projects.map((ele) => {
     tstack.innerHTML=i
     stack.append(tstack);
   })
-  card.append(imglinks, name, tech, stack);
+  card.append(imglinks,name,description, tech, stack);
   Projects.append(card);
 })
 

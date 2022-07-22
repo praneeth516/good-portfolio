@@ -15,10 +15,12 @@ a{
 }
 
 .profile_img{
-    width: 145px;
-    height: 145px;
+    width: 200px;
+    height: 200px;
     border-radius:50%;
     overflow: hidden;
+    margin-top: 33px;
+    margin-bottom: none;
 }
 .profile_img img{
     width:100%;
@@ -87,6 +89,7 @@ a{
     margin: 20px 20px;
     padding: 20px;
     border: 1px solid rgb(231, 230, 230);
+    width: 300px;
 }
 .card:hover{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -99,6 +102,11 @@ a{
 .card .Proj_name{
     font-size: 20px;
     font-weight: bold;
+}
+.card .desc_name{
+    font-size: 14px;
+    background-size: cover;
+    width:fit-content;
 }
 .card div{
     display: flex;
